@@ -1,14 +1,14 @@
-// src/components/ReviewCard.jsx
-import './ReviewCard.css';
+// src/components/ReviewCart.jsx
+import './ReviewCart.css';
 import starIcon from '../assets/star.svg';
-export function ReviewCard({ text, author, rating, date }) {
+export function ReviewCart({ text, author, rating, date }) {
   // Створюємо масив для рендерингу зірочок
   const stars = Array(rating).fill(starIcon).map((icon, index) => (
     <img key={index} src={icon} alt="star" className="review-star" />
   ));
 
   return (
-    <div className="review-card">
+    <div className="review-cart">
       {/* Світло-сірий блок для тексту відгуку */}
       <div className="review-text-bubble">
         <p>{text}</p>

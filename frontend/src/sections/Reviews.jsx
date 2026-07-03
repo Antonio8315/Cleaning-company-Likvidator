@@ -1,5 +1,5 @@
 // src/sections/Reviews.jsx
-import { ReviewCard } from '../components/ReviewCard';
+import { ReviewCart } from '../components/ReviewCart';
 import './Reviews.css';
 
 export function Reviews() {
@@ -38,7 +38,7 @@ export function Reviews() {
       {/* Контейнер для трьох карток */}
       <div className="reviews-grid">
         {reviewsData.map(review => (
-          <ReviewCard 
+          <ReviewCart 
             key={review.id}
             text={review.text}
             author={review.author}
