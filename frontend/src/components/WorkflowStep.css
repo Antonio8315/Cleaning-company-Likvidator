@@ -1,0 +1,29 @@
+.workflow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центруємо круг і текст по вертикалі */
+  text-align: center;  /* Центруємо сам текст всередині <p> */
+  flex: 1;             /* Кожен крок займає рівну частину простору */
+  min-width: 150px;    /* Щоб текст не стискався в одну літеру на середніх екранах */
+}
+
+/* Перевизначаємо розміри кружечка саме для цієї секції, якщо вони у Figma більші */
+.workflow-step .circle-icon-container {
+  width: 80px;  /* Підглянь точний розмір у Figma, на око вони більші за попередні */
+  height: 80px;
+  background-color: #ffffff;
+  box-shadow: none; /* прибираємо тінь, якщо на макеті її немає */
+}
+
+.workflow-step .circle-icon-image {
+  width: 36px;  /* Сині іконки всередині теж робимо трохи більшими */
+  height: 36px;
+}
+
+.workflow-step-text {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff; /* Текст на макеті білий */
+  line-height: 1.4;
+}

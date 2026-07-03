@@ -1,0 +1,62 @@
+/* src/sections/Workflow.css */
+
+.workflow-section {
+  width: 100%;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.workflow-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.workflow-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a253c; /* Темний заголовок */
+  margin: 0;
+}
+
+.workflow-underline {
+  width: 180px;
+  height: 3px;
+  background-color: #8c1d1d; /* Темно-червона/коричнева лінія як на макеті */
+  margin: 8px auto 0 auto;
+}
+
+/* Головний флекс-контейнер для кроків */
+.workflow-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Щоб кружечки були на одній лінії, навіть якщо текст знизу різної довжини */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Адаптивність: на телефонах і планшетах 5 елементів в ряд не помістяться */
+@media (max-width: 868px) {
+  .workflow-container {
+    flex-wrap: wrap; /* Дозволяємо перенос */
+    justify-content: center;
+    gap: 40px 20px;
+  }
+  
+  .workflow-step {
+    /* Робимо так, щоб на планшетах ставало по 2-3 в ряд */
+    flex: calc(33.333% - 20px); 
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .workflow-container {
+    flex-direction: column; /* На мобільних вишиковуємо чітко в один стовпчик */
+    align-items: center;
+  }
+  
+  .workflow-step {
+    width: 100%;
+  }
+}

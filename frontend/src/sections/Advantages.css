@@ -1,0 +1,72 @@
+.advantages-section {
+    display: flex;
+    align-items: center;
+
+    padding: 50px 50px;
+    /* Відступи зверху та знизу, а також з боків */
+
+}
+
+.advantages-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* відстань між рядками переваг */
+}
+
+.advantages-item {
+    display: flex;
+    gap: 20px;
+    /* Відстань між кружком і текстом справа */
+}
+
+.advantages-item-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 139%;
+    text-align: left;
+    color: #000000;
+}
+
+.advantages-title {
+    display: flex;
+    left: 55.25%;
+    right: 14.69%;
+    top: 19.2%;
+    bottom: 78.43%;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 139%;
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+    padding: 0px 50px;
+}
+
+.btn-learn-more {
+    width: 164px;
+    height: 86.17px;
+    background: #FB8F1D;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 375%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: normal;
+    margin: 50px 50px;
+}

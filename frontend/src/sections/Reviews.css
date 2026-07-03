@@ -1,0 +1,71 @@
+/* src/sections/Reviews.css */
+
+.reviews-section {
+  width: 100%;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центруємо заголовок, грід та кнопку */
+}
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.reviews-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a253c;
+  margin-bottom: 8px;
+}
+
+.reviews-underline {
+  width: 250px;
+  height: 3px;
+  background-color: #1a253c;
+  margin: 0 auto;
+}
+
+/* Вирівнюємо 3 картки в один ряд */
+.reviews-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* відстань між картками */
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 48px;
+}
+
+/* Стиль для великої синьої кнопки внизу */
+.reviews-load-more-btn {
+  width: 100%;
+  max-width: 1200px; /* Кнопка розтягується на всю ширину контенту */
+  background-color: #3b5e7c; /* Темно-синій/сірий колір як на макеті */
+  color: #ffffff;
+  border: none;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.reviews-load-more-btn:hover {
+  background-color: #2c475e; /* Стає темнішою при наведенні */
+}
+
+/* Адаптивність для планшетів та мобілок */
+@media (max-width: 968px) {
+  .reviews-grid {
+    flex-direction: column; /* Картки стають одна під одну на маленьких екранах */
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .reviews-load-more-btn {
+    max-width: 360px; /* На мобілці робимо кнопку компактнішою, за шириною картки */
+  }
+}

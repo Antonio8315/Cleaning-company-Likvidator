@@ -1,0 +1,50 @@
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центруємо ім'я та зірочки під баблом */
+  width: 100%;
+  max-width: 360px; /* Обмежуємо ширину однієї картки */
+}
+
+.review-text-bubble {
+  background-color: #e2e8f0; /* Світло-сірий фон як на макеті */
+  padding: 24px;
+  border-radius: 4px; /* Прямокутна форма з мінімальним закругленням */
+  width: 100%;
+  min-height: 180px; /* Щоб усі картки були однакової висоти */
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.review-text-bubble p {
+  margin: 0;
+  font-size: 16px;
+  color: #1a253c;
+  text-align: left;
+}
+
+.review-meta {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.review-author {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a253c;
+}
+
+.review-stars {
+  display: flex;
+  gap: 2px;
+  font-size: 14px;
+}
+
+.review-date {
+  font-size: 12px;
+  color: #4a5568;
+}

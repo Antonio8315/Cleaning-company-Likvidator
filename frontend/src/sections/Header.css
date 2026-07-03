@@ -1,0 +1,57 @@
+.header {
+display: flex;
+align-items: center;
+gap: 32px;
+flex-wrap: wrap;
+padding: 3% 5%;
+
+}
+
+.btn{
+/* login btn */
+width: 132px;
+height: 65.21px;
+justify-content: center;
+display: flex;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 60px;
+}
+
+.btn-register{
+/* register btn */
+left: 83.06%;
+right: 8.69%;
+top: 1.65%;
+bottom: 97.57%;
+background: #FB8F1D;
+border-radius: 8px;
+align-items: center;
+color: #FFFFFF;
+mix-blend-mode: normal;
+}
+
+.btn-register:hover {
+  background-color: #e07d1f;
+}
+
+.btn-login {
+/* login btn */
+box-sizing: border-box;
+left: 73.69%;
+right: 18.06%;
+top: 1.65%;
+bottom: 97.57%;
+background: #ffffff;
+border: 1px solid #FB8F1D;
+border-radius: 8px;
+align-items: center;
+color: #FB8F1D;
+mix-blend-mode: normal;
+}
+
+.btn-login:hover {
+  background-color: #fff7ed; /* легкий помаранчевий відтінок (hover:bg-orange-50) */
+}
