@@ -1,14 +1,23 @@
 // src/components/ServiceModal.jsx
 import './ServiceModal.css';
 import apartmentImg from '../assets/icons/ServicesImages/CleaningApartments.webp'; // Тимчасово твоє фото, або інше для квартир
+import { useState } from 'react';
+import { FeedbackModal } from '../components/FeedbackModal';
 
 export function ServiceModal({ isOpen, onClose, title, description, icon }) {
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
+
   if (!isOpen) return null;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Дякуємо! Заявку на "${title}" прийнято. Ми зв'яжемося з вами.`);
-    onClose();
+    setIsFeedbackOpen(true);
+  };
+
+  const handleCloseEverything = () => {
+    setIsFeedbackOpen(false);
+    onClose(); 
   };
 
   return (
@@ -23,7 +32,7 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
             <div className="modal-service-icon-bg">
               <img src={icon} alt={title} className="modal-service-img-preview" />
             </div>
-            <h2>{title}</h2>
+            <h2 className="service-title">{title}</h2>
             <p className="service-description">
               {description || "Професійні клінінгові послуги від компанії Likvidator. Швидко, якісно та за доступною ціною."}
             </p>
@@ -34,8 +43,8 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
           <div className="modal-form-side">
             <h3>Швидке замовлення</h3>
             <form onSubmit={handleSubmit} className="service-order-form">
-              <label>Ваше ім'я</label>
-              <input type="text" placeholder="Антон" required />
+              <label>Ваше ПІП</label>
+              <input type="text" placeholder="" required />
 
               <label>Телефон</label>
               <input type="tel" placeholder="+380" required />
@@ -48,6 +57,20 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
           </div>
         </div>
       </div>
+
+      <div>
+      {/* Твоя поточна форма замовлення */}
+      <form onSubmit={handleSubmit}>
+        {/* інпути... */}
+        <button type="submit">Оформити замовлення</button>
+      </form>
+
+      {/* Форма оцінки з зображення.png, яка чекає своєї черги */}
+      <FeedbackModal 
+        isOpen={isFeedbackOpen} 
+        onClose={() => handleCloseEverything()} 
+      />
+    </div>
     </div>
   );
 }

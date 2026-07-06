@@ -1,6 +1,7 @@
 import './Advantages.css';
-import memeImage from '../assets/priitula-meme.jpg'; 
+import memeImage from '../assets/priitula-meme.jpg';
 
+import { Link } from 'react-router-dom';
 import { CircleIcon } from '../components/CircleIcon';
 import './Advantages.css';
 
@@ -21,17 +22,17 @@ export function Advantages() {
     <section className="advantages-section">
       {/* Мемчик)) */}
       <div className="advantages-image-container" style={{ width: '50%' }}>
-        <img src={memeImage} alt="Мем" className="advantages-image" style={{ width: '100%' }}/>
+        <img src={memeImage} alt="Мем" className="advantages-image" style={{ width: '100%' }} />
       </div>
       <div className="advantages-content">
         <h2 className="advantages-title">НАШІ ПЕРЕВАГИ</h2>
-        
+
         <ul className="advantages-list">
           {advantagesData.map(item => (
             <li key={item.id} className="advantages-item">
               {/* Викликаємо наш круглий компонент і передаємо іконку */}
               <CircleIcon iconUrl={item.icon} altText={item.text} />
-              
+
               {/* Текст переваги поруч */}
               <span className="advantages-item-text">{item.text}</span>
             </li>
@@ -39,9 +40,12 @@ export function Advantages() {
         </ul>
 
         {/* Кнопка "Learn more" */}
-      <div className="advantages-action">
-         <button className="btn-learn-more">Learn more</button>
-      </div>
+        <div className="advantages-action">
+          <Link to="#about" className="btn-learn-more">
+            Про нас
+          </Link>
+          {/* <button className="btn-learn-more">Learn more</button> */}
+        </div>
 
       </div>
     </section>

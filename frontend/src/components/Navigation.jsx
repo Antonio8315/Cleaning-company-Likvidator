@@ -8,7 +8,7 @@ export function Navigation() {
   const links = [
     { id: 'main', label: 'Головна', path: '/' },
     { id: 'services', label: 'Послуги', path: '/services' },
-    { id: 'cart', label: 'Кошик', path: '/cart' },
+    // { id: 'cart', label: 'Кошик', path: '/cart' },
     { id: 'reviews', label: 'Відгуки', path: '/reviews' },
   ];
 

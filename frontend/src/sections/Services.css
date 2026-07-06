@@ -37,6 +37,7 @@
 
 .services-column-group {
   flex: 1; /* Обидві великі колонки будуть однакової ширини */
+  margin: 20px;
 }
 
 .group-title-orange {

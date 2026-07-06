@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { MainPage } from './pages/MainPage.jsx';
 import { ReviewsPage } from './pages/ReviewsPage.jsx';
 import { ServicesPage } from './pages/ServicesPage.jsx';
-import { CartPage } from './pages/CartPage.jsx';
+// import { CartPage } from './pages/CartPage.jsx';
 import './App.css'
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
       <Route path="/reviews" element={<ReviewsPage />} />
 
       {/* Кошик */}
-      <Route path ="/cart" element={<CartPage />} />
+      {/* <Route path ="/cart" element={<CartPage />} /> */}
     </Routes>
   );
 }
