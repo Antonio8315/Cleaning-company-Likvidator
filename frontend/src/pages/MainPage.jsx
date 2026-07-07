@@ -6,7 +6,7 @@ import { Header } from "../sections/Header.jsx";
 import { Hero } from '../sections/Hero.jsx';
 import { Advantages } from '../sections/Advantages.jsx';
 import { MainServices } from '../sections/MainServices.jsx';
-import { Reviews } from '../sections/Reviews.jsx';
+import { MainReviews } from '../sections/MainReviews.jsx';
 import { Workflow } from '../sections/Workflow.jsx';
 import { About } from '../sections/About.jsx';
 import { Footer } from '../sections/Footer.jsx';
@@ -32,7 +32,7 @@ export function MainPage() {
       <Hero />
       <Advantages />
       <MainServices />
-      <Reviews />
+      <MainReviews />
       <Workflow />
       <About />
       <Footer />

@@ -6,9 +6,9 @@ export function About() {
         <section id="about" className="about-section">
             <div className="about-container">
 
-                <h2 className="about-main-title">
+                <h3 className="about-main-title">
                     ЛІКВІДАТОР – КЛІНІНГОВА КОМПАНІЯ В М.ЧЕРНІВЦІ
-                </h2>
+                </h3>
 
                 <p className="about-paragraph">
                     В наші дні в моді іноземні вирази, навіть якщо вони мають повноцінні російські еквіваленти. Один з них — клінінг (cleaning), що в перекладі з англійської мови означає «прибирання». Компанії, що

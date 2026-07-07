@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ReviewCart } from '../components/ReviewCart';
 import './Reviews.css';
 
-export function Reviews() {
+export function MainReviews() {
   const reviewsData = [
     {
       id: 1,
@@ -25,20 +25,6 @@ export function Reviews() {
       author: "Денис",
       rating: 5,
       date: "13th Жовтень 2022 12:04pm"
-    },
-    {
-      id: 4,
-      text: "Тра-та-та",
-      author: "Галя",
-      rating: 3,
-      date: "15th Жовтень 2021 12:36pm"
-    },
-    {
-      id: 5,
-      text: "Тра-та-та",
-      author: "Денис",
-      rating: 4,
-      date: "23th Жовтень 2022 17:44pm"
     }
   ];
 
@@ -53,7 +39,7 @@ export function Reviews() {
       {/* Контейнер для трьох карток */}
       <div className="reviews-grid">
         {reviewsData.map(review => (
-          <ReviewCart 
+          <ReviewCart
             key={review.id}
             text={review.text}
             author={review.author}
@@ -62,7 +48,12 @@ export function Reviews() {
           />
         ))}
       </div>
-      
+
+      {/* Нижня кнопка */}
+      <Link to="/reviews" className="reviews-load-more-btn">
+        Подивитись усі відгуки...
+      </Link>
+
     </section>
   );
 }
