@@ -7,89 +7,92 @@ import iconInsta from '../assets/icons/FooterIcons/instagram.svg';
 import iconViber from '../assets/icons/FooterIcons/viber.svg';
 import iconYt from '../assets/icons/FooterIcons/youtube.svg';
 import googleRatingBadge from '../assets/icons/FooterIcons/google-rating.png';
+
+import { Link } from 'react-router-dom';
 export function Footer() {
-    const popularServices = [
-        "Прибирання квартир",
-        "Прибирання після пожежі",
-        "Прибирання після ремонту",
-        "Генеральне прибирання квартир",
-        "Прибирання офісів",
-        "Хімчистка килимів",
-        "Хімчистка м’яких меблів",
-        "Хімчистка салону автомобіля",
-        "Карта сайту"
-    ];
+  // Функція для плавного скролу до секцій на головній
+  const handleScrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
-    return (
-        <footer className="footer-section">
-            <div className="footer-container">
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        
+        {/* КОЛОНКА 1: Про компанію */}
+        <div className="footer-column footer-about">
+          <h3 className="footer-logo">Likvidator</h3>
+          <p className="footer-text">
+            Професійні клінінгові послуги для приватних осіб та бізнесу. 
+            Забезпечуємо бездоганну чистоту, свіжість та затишок у вашому приміщенні. 
+            Працюємо швидко, якісно та безпечно!
+          </p>
+          <p className="footer-copyright">
+            &copy; {new Date().getFullYear()} Likvidator. Всі права захищені.
+          </p>
+        </div>
 
-                {/* ЛІВА КОЛОНКА: ПОПУЛЯРНІ ПОСЛУГИ */}
-                <div className="footer-column">
-                    <h3 className="footer-title">ПОПУЛЯРНІ ПОСЛУГИ</h3>
-                    <ul className="footer-services-list">
-                        {popularServices.map((service, index) => (
-                            <li key={index}>
-                                <a href={`#${service.toLowerCase().replace(/ /g, '-')}`}>{service}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+        {/* КОЛОНКА 2: Швидка навігація (Карта сайту) */}
+        <div className="footer-column footer-nav">
+          <h4>Популярні послуги</h4>
+          <ul className="footer-links">
+            <li>
+              <Link to="/#MainServices" onClick={() => handleScrollToSection('MainServices')}>
+                Прибирання квартир
+              </Link>
+            </li>
+            <li>
+              <Link to="/#MainServices" onClick={() => handleScrollToSection('MainServices')}>
+                Генеральне прибирання
+              </Link>
+            </li>
+            <li>
+              <Link to="/#MainServices" onClick={() => handleScrollToSection('MainServices')}>
+                Хімчистка м'яких меблів
+              </Link>
+            </li>
+            <li>
+              <Link to="/#MainServices" onClick={() => handleScrollToSection('MainServices')}>
+                Хімчистка килимів
+              </Link>
+            </li>
+            <li>
+              <Link to="/reviews">Почитати відгуки</Link>
+            </li>
+          </ul>
+        </div>
 
-                {/* ПРАВА КОЛОНКА: СОЦМЕРЕЖІ ТА ЧАС РОБОТИ */}
-                <div className="footer-column footer-right">
-                    <div className="footer-socials-block">
-                        <h3 className="footer-title">МИ В СОЦМЕРЕЖАХ</h3>
-                        <div className="footer-social-icons">
-                            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-                                <img src={iconFb} alt="Facebook" />
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                                <img src={iconInsta} alt="Instagram" />
-                            </a>
-                            <a href="viber://chat?number=your_number" target="_blank" rel="noreferrer">
-                                <img src={iconViber} alt="Viber" />
-                            </a>
-                            <a href="https://youtube.com" target="_blank" rel="noreferrer">
-                                <img src={iconYt} alt="YouTube" />
-                            </a>
-                        </div>
-                    </div>
+        {/* КОЛОНКА 3: Контакти та Графік */}
+        <div className="footer-column footer-contacts">
+          <h4>Наші контакти</h4>
+          <ul className="contact-list">
+            <li>
+              <span className="contact-icon">📍</span> 
+              <span>м. Чернівці, вул. Головна, 1</span>
+            </li>
+            <li>
+              <span className="contact-icon">📞</span> 
+              <a href="tel:+380000000000">+38 (000) 000-00-00</a>
+            </li>
+            <li>
+              <span className="contact-icon">✉️</span> 
+              <a href="mailto:info@likvidator.com">info@likvidator.com</a>
+            </li>
+            <li className="work-hours">
+              <span className="contact-icon">🕒</span>
+              <div>
+                <strong>Графік роботи:</strong>
+                <p>Пн - Нд: 08:00 - 20:00</p>
+                <p className="no-days-off">Працюємо без вихідних</p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-                    <div className="footer-hours-block">
-                        <h4 className="footer-hours-title">Час роботи:</h4>
-                        <p className="footer-hours-text">Цілодобово</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="footer-bottom">
-                <div className="footer-bottom-container">
-
-                    {/* Копірайт */}
-                    <div className="footer-copyright">
-                        <span className="copyright-icon">©</span>
-                        <p className="copyright-text">
-                            Ліквідатор – клінінгова компанія в м. Чернівці
-                        </p>
-                    </div>
-
-                    {/* Текст reCAPTCHA */}
-                    <div className="footer-recaptcha">
-                        <p>
-                            This site is protected by reCAPTCHA and the Google{' '}
-                            <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> and{' '}
-                            <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a> apply.
-                        </p>
-                    </div>
-
-                    {/* Віджет Google Rating праворуч */}
-                    <div className="footer-google-rating">
-                        <img src={googleRatingBadge} alt="Google Rating 4.6" />
-                    </div>
-
-                </div>
-            </div>
-        </footer>
-    );
+      </div>
+    </footer>
+  );
 }

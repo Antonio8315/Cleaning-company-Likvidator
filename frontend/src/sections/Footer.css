@@ -1,209 +1,132 @@
 /* src/sections/Footer.css */
 
-.footer-section {
-  width: 100%;
-  background-color: #0c8ca4; /* Твій фірмовий глибокий колір з макету */
-  padding: 60px 40px;
-  box-sizing: border-box;
+.footer {
+  background-color: #31829a; /* Твій синій колір фону з макета */
+  color: #ffffff;
+  padding: 60px 20px 30px 20px;
+  font-family: sans-serif;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between; /* Розносить колонки вліво та вправо */
   max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  /* Створюємо 3 рівні колонки */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 40px;
 }
 
-.footer-column {
-  flex: 1;
-  max-width: 450px; /* Обмежуємо ширину, щоб тексти не розповзалися */
-}
-
-.footer-right {
-  max-width: 300px; /* Права колонка компактніша */
-  display: flex;
-  flex-direction: column;
-  gap: 32px; /* Відступ між соцмережами та часом роботи */
-}
-
-/* Заголовки з білою лінією знизу */
-.footer-title {
+.footer-column h4 {
   font-size: 18px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 0 16px 0;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #ffffff; /* Біла лінія на всю ширину блоку */
+  margin-top: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
-/* Список посилань ліворуч */
-.footer-services-list {
+/* Стилі для 1-ї колонки (Про нас) */
+.footer-logo {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 25px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Стилі для 2-ї колонки (Навігація) */
+.footer-links {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  gap: 10px; /* Відстань між рядками посилань */
 }
 
-.footer-services-list li a {
-  color: #ffffff;
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   font-size: 15px;
-  opacity: 0.9;
-  transition: opacity 0.2s ease, padding-left 0.2s ease;
+  transition: color 0.2s, padding-left 0.2s;
 }
 
-/* Інтерактивність: легке підсвічування та зсув при наведенні */
-.footer-services-list li a:hover {
-  opacity: 1;
-  padding-left: 4px;
+.footer-links a:hover {
+  color: #ff9100; /* Підсвічування фірмовим помаранчевим при наведенні */
+  padding-left: 5px; /* Легкий інтерактивний ефект зсуву */
 }
 
-/* Блок іконок соцмереж */
-.footer-social-icons {
+/* Стилі для 3-ї колонки (Контакти) */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
   display: flex;
+  align-items: flex-start;
   gap: 12px;
-  margin-top: 16px;
-}
-
-.footer-social-icons img {
-  width: 32px;
-  height: 32px;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-.footer-social-icons img:hover {
-  transform: scale(1.1); /* Легке збільшення іконки при наведенні */
-}
-
-/* Блок часу роботи */
-.footer-hours-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #ffffff;
-  margin: 0 0 8px 0;
-}
-
-.footer-hours-text {
+  margin-bottom: 15px;
   font-size: 15px;
-  color: #ffffff;
-  margin: 0;
-  opacity: 0.9;
-}
-
-/* Адаптивність під мобільні екрани */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column; /* Колонки стають одна під одну */
-    gap: 48px;
-  }
-
-  .footer-column {
-    max-width: 100%; /* На мобілці займають всю ширину */
-  }
-
-  .footer-right {
-    max-width: 100%;
-  }
-}
-
-/* Додай це в кінець твого файлу src/sections/Footer.css */
-
-.footer-bottom {
-  width: 100%;
-  margin-top: 40px; /* Відступ від верхніх колонок */
-  padding-top: 24px;
-
-  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Легка напівпрозора лінія зверху */
-}
-
-.footer-bottom-container {
-  display: flex;
-  justify-content: space-between; /* Розмиває копірайт, капчу і віджет по ширині */
-  align-items: center;            /* Центрує їх по вертикалі */
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-/* Копірайт блок */
-.footer-copyright {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #ffffff;
-  flex: 1;
-}
-
-.copyright-icon {
-  font-size: 24px; /* Робимо значок © трохи більшим */
-  font-weight: 400;
-}
-
-.copyright-text {
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.4;
-  text-align: left;
-}
-
-/* Текст reCAPTCHA по центру */
-.footer-recaptcha {
-  flex: 1.5;
-  text-align: center;
-}
-
-.footer-recaptcha p {
-  font-size: 11px; /* Дрібний службовий текст */
-  color: rgba(255, 255, 255, 0.7); /* Робимо його злегка сіруватим/тьмяним */
-  margin: 0;
-}
-
-.footer-recaptcha a {
   color: rgba(255, 255, 255, 0.9);
-  text-decoration: underline;
 }
 
-.footer-recaptcha a:hover {
+.contact-list a {
   color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
-/* Блок віджета Google */
-.footer-google-rating {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; /* Притискає плашку відгуків до правого краю */
+.contact-list a:hover {
+  color: #ff9100;
 }
 
-.footer-google-rating img {
-  max-height: 50px; /* Обмежуємо висоту віджета, щоб він акуратно вписався */
-  width: auto;
-  border-radius: 4px; /* Якщо у плашки закруглені краї */
+.contact-icon {
+  font-size: 18px;
+  flex-shrink: 0;
 }
 
-/* Адаптивність для планшетів та мобільних */
-@media (max-width: 968px) {
-  .footer-bottom-container {
-    flex-direction: column; /* Перешиковуємо елементи в стовпчик */
-    text-align: center;
-    gap: 16px;
+.work-hours p {
+  margin: 4px 0 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.no-days-off {
+  color: #ff9100 !important;
+  font-weight: bold;
+  font-size: 12px !important;
+}
+
+/* 📱 Адаптивність для планшетів та телефонів */
+@media (max-width: 900px) {
+  .footer-container {
+    /* Перетворюємо 3 колонки в 1 стовпчик на малих екранах */
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer {
+    padding: 40px 20px 20px 20px;
   }
 
-  .footer-copyright {
-    justify-content: center;
-  }
-
-  .footer-recaptcha {
-    text-align: center;
-  }
-
-  .footer-google-rating {
-    justify-content: center; /* На мобілці віджет стає по центру */
+  .footer-column h4 {
+    margin-bottom: 15px;
+    width: 100%; /* Рамка під заголовком розтягнеться красиво */
   }
 }

@@ -39,7 +39,28 @@ export function Reviews() {
       author: "Денис",
       rating: 4,
       date: "23th Жовтень 2022 17:44pm"
-    }
+    },
+    {
+      id: 4,
+      text: "Тра-та-та",
+      author: "Галя",
+      rating: 3,
+      date: "15th Жовтень 2021 12:36pm"
+    },
+    {
+      id: 4,
+      text: "Тра-та-та",
+      author: "Галя",
+      rating: 3,
+      date: "15th Жовтень 2021 12:36pm"
+    },
+    {
+      id: 4,
+      text: "Тра-та-та",
+      author: "Галя",
+      rating: 3,
+      date: "15th Жовтень 2021 12:36pm"
+    },
   ];
 
   return (
@@ -50,7 +71,7 @@ export function Reviews() {
         <div className="reviews-underline"></div>
       </div>
 
-      {/* Контейнер для трьох карток */}
+      {/* Контейнер для карток */}
       <div className="reviews-grid">
         {reviewsData.map(review => (
           <ReviewCart 
@@ -59,6 +80,7 @@ export function Reviews() {
             author={review.author}
             rating={review.rating}
             date={review.date}
+            isWhiteDate={true}
           />
         ))}
       </div>

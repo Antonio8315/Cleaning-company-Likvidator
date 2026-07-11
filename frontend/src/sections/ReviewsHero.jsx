@@ -1,5 +1,5 @@
 // src/components/ReviewsHero.jsx
-import './ReviewsHero.css';
+import './Hero.css';
 import bgImage from '../assets/hero-bg.jpg'; 
 
 export function ReviewsHero() {

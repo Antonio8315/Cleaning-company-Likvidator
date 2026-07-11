@@ -28,7 +28,7 @@ export function MainServices() {
             </div>
             
             <div className="services-main-container">
-                <div className="services-column-group">
+                <div className="services-column-group" id="MainServices">
                     <div className="services-sub-grid">
                         {privateServices.map(service => (
                             <ServiceItem

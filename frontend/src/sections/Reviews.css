@@ -30,12 +30,16 @@
 
 /* Вирівнюємо 3 картки в один ряд */
 .reviews-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px; /* відстань між картками */
+  display: grid;
+  /* Створюємо 4 рівні колонки на великому екрані */
+  grid-template-columns: repeat(4, 1fr); 
+  /* Відступи між картками (горизонтальні та вертикальні) */
+  gap: 24px; 
   width: 100%;
   max-width: 1200px;
-  margin-bottom: 48px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Стиль для великої синьої кнопки внизу */
@@ -58,15 +62,22 @@
   background-color: #2c475e; /* Стає темнішою при наведенні */
 }
 
-/* Адаптивність для планшетів та мобілок */
-@media (max-width: 968px) {
+@media (max-width: 900px) {
   .reviews-grid {
-    flex-direction: column; /* Картки стають одна під одну на маленьких екранах */
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 32px;
+    gap: 16px;
   }
-  
+
   .reviews-load-more-btn {
     max-width: 360px; /* На мобілці робимо кнопку компактнішою, за шириною картки */
+  }
+}
+
+/* 📱 Адаптивність для телефонів (робимо 1 в ряд, як ти й хотів) */
+@media (max-width: 550px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
