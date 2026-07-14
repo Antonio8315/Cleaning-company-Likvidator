@@ -1,4 +1,4 @@
-/* src/components/ServiceModal.css */
+
 
 .modal-overlay {
   position: fixed;
@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Перекриває хедер */
+  z-index: 1000; 
 }
 
 .modal-window {
@@ -39,7 +39,7 @@
   display: flex;
 }
 
-/* Ліва колонка */
+
 .modal-info-side {
   flex: 1;
   padding: 30px;
@@ -92,7 +92,7 @@
   font-size: 18px;
 }
 
-/* Права колонка з формою */
+
 .modal-form-side {
   flex: 1;
   padding: 30px;
@@ -128,7 +128,7 @@
   background-color: #e07f00;
 }
 
-/* Адаптація для мобільних екранів */
+
 @media (max-width: 768px) {
   .modal-body {
     flex-direction: column;

@@ -1,4 +1,4 @@
-// src/sections/Reviews.jsx
+
 import { Link } from 'react-router-dom';
 import { ReviewCart } from '../components/ReviewCart';
 import './Reviews.css';
@@ -65,13 +65,13 @@ export function Reviews() {
 
   return (
     <section className="reviews-section ">
-      {/* Заголовок секції */}
+      {}
       <div className="reviews-header">
         <h2>ВІДГУКИ ПРО КОМПАНІЮ «ЛІКВІДАТОР»</h2>
         <div className="reviews-underline"></div>
       </div>
 
-      {/* Контейнер для карток */}
+      {}
       <div className="reviews-grid">
         {reviewsData.map(review => (
           <ReviewCart 

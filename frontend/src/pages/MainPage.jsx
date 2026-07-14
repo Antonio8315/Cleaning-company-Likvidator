@@ -1,4 +1,4 @@
-// src/pages/MainPage.jsx
+
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ export function MainPage() {
   const location = useLocation();
 
   useEffect(() => {
-    // Якщо в URL є хеш (наприклад, #about)
+    
     if (location.hash) {
       const element = document.getElementById(location.hash.slice(1));
       if (element) {

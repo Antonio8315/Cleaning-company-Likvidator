@@ -1,11 +1,11 @@
-/* src/sections/Hero.css */
+
 
 .hero-section {
   position: relative;
   width: 100%;
   min-height: 550px;
 
-  /* Робота з фоновим зображенням */
+  
   background-image: url('../assets/hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-/* Напівпрозора підкладка */
+
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -59,23 +59,23 @@
 @media (max-width: 900px) {
   .hero-section {
     min-height: 300px;
-    /* Зменшуємо висоту секції на дуже маленьких екранах */
+    
   }
 
   .hero-title {
     font-size: 64px;
-    /* Зменшуємо розмір заголовка на мобільних */
+    
   }
 }
 
 @media (max-width: 550px) {
   .hero-section {
     min-height: 200px;
-    /* Зменшуємо висоту секції на дуже маленьких екранах */
+    
   }
 
   .hero-title {
     font-size: 48px;
-    /* Ще менший розмір для дуже маленьких екранів */
+    
   }
 }

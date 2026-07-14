@@ -1,4 +1,4 @@
-// src/sections/About.jsx
+
 import './About.css';
 
 export function About() {
@@ -40,7 +40,7 @@ export function About() {
                 <p className="about-paragraph">
                     Фізичні особи та керівники компаній підходять до вибору виконавця клінінгових послуг по-різному, але є і загальні моменти:                </p>
 
-                {/* Список критеріїв */}
+                {}
                 <ul className="about-list">
                     <li>ціна;</li>
                     <li>зручність отримання послуг;</li>

@@ -1,4 +1,4 @@
-/* src/sections/Services.css */
+
 
 .mainservices-section {
   width: 100%;
@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-/* Головний контейнер: ділить екран на 2 великі половини */
+
 .services-main-container {
   display: flex;
   justify-content: space-between;
@@ -35,35 +35,35 @@
 }
 
 .services-column-group {
-  flex: 1; /* Обидві великі колонки будуть однакової ширини */
+  flex: 1; 
   margin: 20px;
 }
 
 .group-title-orange {
   font-size: 20px;
-  color: #ff9124; /* Помаранчеві заголовки підгруп */
+  color: #ff9124; 
   text-align: center;
   margin-bottom: 32px;
   font-weight: 700;
 }
 
-/* Магія CSS Grid: робить два стовпчики для самих карток послуг */
+
 .services-sub-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Рівно 2 стовпчики */
-  gap: 24px 20px; /* 24px відступ між рядками, 20px між стовпчиками */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 24px 20px; 
 }
 
-/* Адаптивність для мобільних екранів */
+
 @media (max-width: 968px) {
   .services-main-container {
-    flex-direction: column; /* На мобілці великі колонки стануть одна під одну */
+    flex-direction: column; 
     gap: 40px;
   }
 }
 
 @media (max-width: 550px) {
   .services-sub-grid {
-    grid-template-columns: 1fr; /* На зовсім дрібних екранах послуги вишикуються в один стовпчик */
+    grid-template-columns: 1fr; 
   }
 }

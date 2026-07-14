@@ -1,6 +1,6 @@
-// src/components/ServiceModal.jsx
+
 import './ServiceModal.css';
-import apartmentImg from '../assets/icons/ServicesImages/CleaningApartments.webp'; // Тимчасово твоє фото, або інше для квартир
+import apartmentImg from '../assets/icons/ServicesImages/CleaningApartments.webp'; 
 import { useState } from 'react';
 import { FeedbackModal } from '../components/FeedbackModal';
 
@@ -26,9 +26,9 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
         <button className="modal-close-btn" onClick={onClose}>&times;</button>
 
         <div className="modal-body">
-          {/* Ліва частина: Динамічна інформація */}
+          {}
           <div className="modal-info-side">
-            {/* Використовуємо іконку або дефолтне фото */}
+            {}
             <div className="modal-service-icon-bg">
               <img src={icon} alt={title} className="modal-service-img-preview" />
             </div>
@@ -39,7 +39,7 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
             <div className="service-price">Ціна: <span>Розраховується індивідуально</span></div>
           </div>
 
-          {/* Права частина: Форма */}
+          {}
           <div className="modal-form-side">
             <h3>Швидке замовлення</h3>
             <form onSubmit={handleSubmit} className="service-order-form">
@@ -59,7 +59,7 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
       </div>
       <div>
 
-        {/* Форма оцінки з зображення.png, яка чекає своєї черги */}
+        {}
         <FeedbackModal
           isOpen={isFeedbackOpen}
           onClose={() => handleCloseEverything()}

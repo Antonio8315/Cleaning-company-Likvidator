@@ -1,7 +1,7 @@
-/* src/sections/Footer.css */
+
 
 .footer {
-  background-color: #31829a; /* Твій синій колір фону з макета */
+  background-color: #31829a; 
   color: #ffffff;
   padding: 60px 20px 30px 20px;
   font-family: sans-serif;
@@ -11,7 +11,7 @@
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  /* Створюємо 3 рівні колонки */
+  
   grid-template-columns: repeat(3, 1fr); 
   gap: 40px;
 }
@@ -27,7 +27,7 @@
   display: inline-block;
 }
 
-/* Стилі для 1-ї колонки (Про нас) */
+
 .footer-logo {
   font-size: 26px;
   margin-top: 0;
@@ -47,7 +47,7 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Стилі для 2-ї колонки (Навігація) */
+
 .footer-links {
   list-style: none;
   padding: 0;
@@ -66,11 +66,11 @@
 }
 
 .footer-links a:hover {
-  color: #ff9100; /* Підсвічування фірмовим помаранчевим при наведенні */
-  padding-left: 5px; /* Легкий інтерактивний ефект зсуву */
+  color: #ff9100; 
+  padding-left: 5px; 
 }
 
-/* Стилі для 3-ї колонки (Контакти) */
+
 .contact-list {
   list-style: none;
   padding: 0;
@@ -120,10 +120,10 @@
   font-size: 12px !important;
 }
 
-/* 📱 Адаптивність для планшетів та телефонів */
+
 @media (max-width: 900px) {
   .footer-container {
-    /* Перетворюємо 3 колонки в 1 стовпчик на малих екранах */
+    
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -134,6 +134,6 @@
 
   .footer-column h4 {
     margin-bottom: 15px;
-    width: 100%; /* Рамка під заголовком розтягнеться красиво */
+    width: 100%; 
   }
 }

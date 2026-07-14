@@ -1,4 +1,4 @@
-/* src/components/FeedbackModal.css */
+
 
 .feedback-overlay {
   position: fixed;
@@ -10,13 +10,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2000; /* Поверх усіх інших вікон */
+  z-index: 2000; 
 }
 
 .feedback-window {
   background: #ffffff;
   border: 2px solid #000000;
-  border-radius: 40px; /* Сильне закруглення як на зображення.png */
+  border-radius: 40px; 
   width: 90%;
   max-width: 450px;
   padding: 40px 20px;
@@ -43,7 +43,7 @@
   text-align: center;
 }
 
-/* Стилізація хмарки з серцем */
+
 .feedback-bubble {
   width: 140px;
   height: 110px;
@@ -56,7 +56,7 @@
   margin-bottom: 30px;
 }
 
-/* Хвостик хмарки */
+
 .feedback-bubble::after {
   content: '';
   position: absolute;
@@ -91,7 +91,7 @@
   margin: 0 0 35px 0;
 }
 
-/* Зірочки */
+
 .feedback-stars {
   display: flex;
   gap: 8px;
@@ -114,13 +114,13 @@
   font-size: 45px;
 }
 
-/* Колір зірочок (активні / неактивні) */
+
 .star-button.on .star {
-  color: #cc5a00; /* Темно-помаранчевий колір зірочок з макета */
+  color: #cc5a00; 
 }
 
 .star-button.off .star {
-  color: #e2e8f0; /* Світло-сірий для порожніх зірок */
+  color: #e2e8f0; 
 }
 
 @keyframes scaleUp {

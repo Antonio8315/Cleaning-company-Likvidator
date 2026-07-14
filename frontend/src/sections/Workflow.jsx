@@ -1,8 +1,8 @@
-// src/sections/Workflow.jsx
+
 import { WorkflowStep } from '../components/WorkflowStep';
 import './Workflow.css';
 
-// Імпорт іконок
+
 import iconDoc from '../assets/icons/WorkflowIcons/document.svg';
 import iconPhone from '../assets/icons/WorkflowIcons/phone.svg';
 import iconCar from '../assets/icons/WorkflowIcons/car.svg';
@@ -25,7 +25,7 @@ export function Workflow() {
         <div className="workflow-underline"></div>
       </div>
 
-      {/* Ряд із кроками */}
+      {}
       <div className="workflow-container">
         {stepsData.map(step => (
           <WorkflowStep key={step.id} icon={step.icon} text={step.text} />

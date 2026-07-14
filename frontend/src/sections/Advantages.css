@@ -3,7 +3,7 @@
     align-items: center;
 
     padding: 50px 50px;
-    /* Відступи зверху та знизу, а також з боків */
+    
 
 }
 
@@ -13,13 +13,13 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    /* відстань між рядками переваг */
+    
 }
 
 .advantages-item {
     display: flex;
     gap: 20px;
-    /* Відстань між кружком і текстом справа */
+    
 }
 
 .advantages-image-container {

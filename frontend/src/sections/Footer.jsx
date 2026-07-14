@@ -1,7 +1,7 @@
-// src/sections/Footer.jsx
+
 import './Footer.css';
 
-// Імпортуємо іконки соцмереж (експортуй їх з Figma або завантаж png/svg)
+
 import iconFb from '../assets/icons/FooterIcons/facebook.svg';
 import iconInsta from '../assets/icons/FooterIcons/instagram.svg';
 import iconViber from '../assets/icons/FooterIcons/viber.svg';
@@ -10,7 +10,7 @@ import googleRatingBadge from '../assets/icons/FooterIcons/google-rating.png';
 
 import { Link } from 'react-router-dom';
 export function Footer() {
-  // Функція для плавного скролу до секцій на головній
+  
   const handleScrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -22,7 +22,7 @@ export function Footer() {
     <footer className="footer">
       <div className="footer-container">
         
-        {/* КОЛОНКА 1: Про компанію */}
+        {}
         <div className="footer-column footer-about">
           <h3 className="footer-logo">Likvidator</h3>
           <p className="footer-text">
@@ -35,7 +35,7 @@ export function Footer() {
           </p>
         </div>
 
-        {/* КОЛОНКА 2: Швидка навігація (Карта сайту) */}
+        {}
         <div className="footer-column footer-nav">
           <h4>Популярні послуги</h4>
           <ul className="footer-links">
@@ -65,7 +65,7 @@ export function Footer() {
           </ul>
         </div>
 
-        {/* КОЛОНКА 3: Контакти та Графік */}
+        {}
         <div className="footer-column footer-contacts">
           <h4>Наші контакти</h4>
           <div className="contact-info">

@@ -1,28 +1,28 @@
-/* src/components/CircleIcon.css */
+
 
 .circle-icon-container {
-  /* 1. Робимо жорсткі однакові розміри круга (підглянь точні в Figma, на око близько 60-70px) */
+  
   width: 100px;
   height: 100px;
   
-  /* 2. Перетворюємо квадрат на ідеальне коло */
+  
   border-radius: 50%;
   
-  /* 3. Колір фону та легка тінь для об'єму, як у макеті */
+  
   background-color: #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
   
-  /* 4. Центруємо іконку всередині круга по вертикалі та горизонталі */
+  
   display: flex;
   align-items: center;
   justify-content: center;
   
-  /* Щоб круг не стискався, якщо текст поруч буде занадто довгим */
+  
   flex-shrink: 0; 
 }
 
 .circle-icon-image {
-  /* Обмежуємо розмір самої іконки всередині, щоб вона не вилазила за межі кола */
+  
   width: 40px;
   height: 40px;
   object-fit: contain;

@@ -1,4 +1,4 @@
-// src/sections/Services.jsx
+
 import { useState } from 'react';
 import { ServiceItem } from '../components/ServiceItem';
 

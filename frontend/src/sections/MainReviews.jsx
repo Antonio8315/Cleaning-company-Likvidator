@@ -1,4 +1,4 @@
-// src/sections/Reviews.jsx
+
 import { Link } from 'react-router-dom';
 import { ReviewCart } from '../components/ReviewCart';
 import './MainReviews.css';
@@ -30,13 +30,13 @@ export function MainReviews() {
 
   return (
     <section className="mainreviews-section">
-      {/* Заголовок секції */}
+      {}
       <div className="reviews-header">
         <h2>ВІДГУКИ ПРО КОМПАНІЮ «ЛІКВІДАТОР»</h2>
         <div className="reviews-underline"></div>
       </div>
 
-      {/* Контейнер для трьох карток */}
+      {}
       <div className="reviews-grid" style={{ display: 'flex', justifyContent: 'center'}}>
         {reviewsData.map(review => (
           <ReviewCart
@@ -49,7 +49,7 @@ export function MainReviews() {
         ))}
       </div>
 
-      {/* Нижня кнопка */}
+      {}
       <Link to="/reviews" className="reviews-load-more-btn">
         Подивитись усі відгуки...
       </Link>

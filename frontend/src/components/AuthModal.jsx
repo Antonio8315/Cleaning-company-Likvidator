@@ -1,10 +1,10 @@
-// src/components/AuthModal.jsx
+
 import { useEffect, useState } from 'react';
 import './AuthModal.css';
-import registerImg from '../assets/icons/RegisterImages/cleaner-bucket.jpg'; // Картинка для реєстрації
+import registerImg from '../assets/icons/RegisterImages/cleaner-bucket.jpg'; 
 
 export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
-  const [mode, setMode] = useState(initialMode); // 'login' або 'register'
+  const [mode, setMode] = useState(initialMode); 
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -32,28 +32,28 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
     e.preventDefault();
     if (mode === 'login') {
       console.log("Вхід в систему:", { email: formData.email, password: formData.password });
-      // Тут логіка для Flask API (/api/auth/login)
+      
     } else {
       console.log("Реєстрація користувача:", formData);
-      // Тут логіка для Flask API (/api/auth/register)
+      
     }
   };
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      {/* Динамічний клас додає модифікатор для компактного вигляду форми логіну */}
+      {}
       <div className={`modal-content ${mode === 'login' ? 'login-layout' : ''}`} onClick={(e) => e.stopPropagation()}>
         
         <button className="modal-close-btn" onClick={onClose}>&times;</button>
 
-        {/* Картинка показується ТІЛЬКИ в режимі реєстрації */}
+        {}
         {mode === 'register' && (
           <div className="modal-image-side">
             <img src={registerImg} alt="Cleaning service" />
           </div>
         )}
 
-        {/* Блок самої форми */}
+        {}
         <div className="modal-form-side">
           {mode === 'login' ? (
             <>
@@ -72,7 +72,7 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
           )}
 
           <form onSubmit={handleSubmit} className="auth-form">
-            {/* Поле Username потрібне ТІЛЬКИ для реєстрації */}
+            {}
             {mode === 'register' && (
               <div className="input-group">
                 <input 
@@ -108,7 +108,7 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
               />
             </div>
 
-            {/* Чекбокс потрібен ТІЛЬКИ для реєстрації */}
+            {}
             {mode === 'register' ? (
               <div className="checkbox-group">
                 <label className="checkbox-label">
@@ -125,7 +125,7 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
                 </label>
               </div>
             ) : (
-              // Можна додати посилання "Forgot password?" для логіну за бажанням
+              
               <div className="forgot-password-placeholder"></div>
             )}
 
@@ -133,8 +133,7 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
               {mode === 'login' ? 'Log in' : 'Create account'}
             </button>
 
-            {/* Для форми логіну повернення назад на реєстрацію вже є зверху, 
-                а для форми реєстрації додамо дрібне посилання внизу */}
+            {}
             {mode === 'register' && (
               <p className="modal-back-to-login">
                 Already have an account? <span onClick={() => setMode('login')}>Log in</span>

@@ -1,4 +1,4 @@
-/* src/components/AuthModal.css */
+
 
 .modal-overlay {
   position: fixed;
@@ -13,7 +13,7 @@
   z-index: 1000;
 }
 
-/* Стандартний великий контейнер для реєстрації (з картинкою) */
+
 .modal-content {
   display: flex;
   background: #ffffff;
@@ -27,7 +27,7 @@
   transition: width 0.3s ease, height 0.3s ease;
 }
 
-/* СПЕЦІАЛЬНИЙ КЛАС ДЛЯ ЛОГІНУ: звужує вікно, бо картинки немає */
+
 .modal-content.login-layout {
   width: 460px;
   height: 480px;
@@ -40,12 +40,12 @@
   background: none;
   border: none;
   font-size: 30px;
-  color: #1e40af; /* Колір хрестика під колір тексту */
+  color: #1e40af; 
   cursor: pointer;
   z-index: 10;
 }
 
-/* Поведінка картинок */
+
 .modal-image-side {
   flex: 1;
   height: 100%;
@@ -57,16 +57,16 @@
   object-fit: cover;
 }
 
-/* Права або єдина сторона форми */
+
 .modal-form-side {
   flex: 1.1;
-  background: linear-gradient(135deg, #a7f3d0, #38bdf8); /* М'ятно-блакитний градієнт */
+  background: linear-gradient(135deg, #a7f3d0, #38bdf8); 
   padding: 40px 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #1e40af;
-  text-align: center; /* Центруємо тексти заголовків */
+  text-align: center; 
 }
 
 .modal-title {
@@ -77,7 +77,7 @@
   line-height: 1.2;
 }
 
-/* Текст перемикача "Don't have an account? Sign Up" */
+
 .modal-switch-text {
   font-size: 16px;
   margin: 0 0 32px 0;
@@ -102,7 +102,7 @@
   margin: 0 0 24px 0;
 }
 
-/* Елементи форми */
+
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -122,7 +122,7 @@
   font-family: inherit;
 }
 
-/* Кнопка */
+
 .submit-auth-btn {
   margin-top: 8px;
   background-color: #1a365d;
@@ -140,7 +140,7 @@
   background-color: #1e3a8a;
 }
 
-/* Чекбокси та додаткові посилання */
+
 .checkbox-label {
   display: flex;
   align-items: center;
@@ -169,10 +169,10 @@
 }
 
 .forgot-password-placeholder {
-  height: 4px; /* Компактний замінник для збереження структури флексів */
+  height: 4px; 
 }
 
-/* Мобільна адаптивність */
+
 @media (max-width: 550px) {
   .modal-content.login-layout,
   .modal-content {

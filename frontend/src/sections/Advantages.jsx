@@ -20,7 +20,7 @@ export function Advantages() {
 
   return (
     <section className="advantages-section">
-      {/* Мемчик)) */}
+      {}
       <div className="advantages-image-container">
         <img src={memeImage} alt="Мем" className="advantages-image" style={{ width: '100%' }} />
       </div>
@@ -30,21 +30,21 @@ export function Advantages() {
         <ul className="advantages-list">
           {advantagesData.map(item => (
             <li key={item.id} className="advantages-item">
-              {/* Викликаємо наш круглий компонент і передаємо іконку */}
+              {}
               <CircleIcon iconUrl={item.icon} altText={item.text} />
 
-              {/* Текст переваги поруч */}
+              {}
               <span className="advantages-item-text">{item.text}</span>
             </li>
           ))}
         </ul>
 
-        {/* Кнопка "Learn more" */}
+        {}
         <div className="advantages-action">
           <Link to="#about" className="btn-learn-more">
             Про нас
           </Link>
-          {/* <button className="btn-learn-more">Learn more</button> */}
+          {}
         </div>
 
       </div>

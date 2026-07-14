@@ -1,4 +1,4 @@
-// src/sections/Services.jsx
+
 import { useState } from 'react';
 import { ServiceItem } from '../components/ServiceItem';
 
@@ -53,7 +53,7 @@ export function Services() {
 
       <div className="services-main-container">
         
-        {/* КОЛОНКА 1: ДЛЯ ПРИВАТНИХ ОСІБ */}
+        {}
         <div className="services-column-group">
           <h3 className="group-title-orange">ДЛЯ ПРИВАТНИХ ОСІБ</h3>
           <div className="services-sub-grid">
@@ -68,7 +68,7 @@ export function Services() {
           </div>
         </div>
 
-        {/* КОЛОНКА 2: ДЛЯ ОРГАНІЗАЦІЙ */}
+        {}
         <div className="services-column-group">
           <h3 className="group-title-orange">ДЛЯ ОРГАНІЗАЦІЙ</h3>
           <div className="services-sub-grid">

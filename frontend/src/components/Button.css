@@ -1,5 +1,5 @@
 .button-header {
-/* login btn */
+
 width: 32px;
 height: 65.21px;
 justify-content: center;
@@ -12,7 +12,7 @@ line-height: 60px;
 }
 
 .button-header-filled {
-/* register btn */
+
 left: 83.06%;
 right: 8.69%;
 top: 1.65%;
@@ -25,7 +25,7 @@ mix-blend-mode: normal;
 }
 
 .button-header-outline {
-/* login btn */
+
 box-sizing: border-box;
 left: 73.69%;
 right: 18.06%;

@@ -8,7 +8,7 @@ padding: 3% 5%;
 }
 
 .btn{
-/* login btn */
+
 width: 132px;
 height: 65.21px;
 justify-content: center;
@@ -21,7 +21,7 @@ line-height: 60px;
 }
 
 .btn-register{
-/* register btn */
+
 left: 83.06%;
 right: 8.69%;
 top: 1.65%;
@@ -38,7 +38,7 @@ mix-blend-mode: normal;
 }
 
 .btn-login {
-/* login btn */
+
 box-sizing: border-box;
 left: 73.69%;
 right: 18.06%;
@@ -53,7 +53,7 @@ mix-blend-mode: normal;
 }
 
 .btn-login:hover {
-  background-color: #fff7ed; /* легкий помаранчевий відтінок (hover:bg-orange-50) */
+  background-color: #fff7ed; 
 }
 
 @media (max-width: 900px) {

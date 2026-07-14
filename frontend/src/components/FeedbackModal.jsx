@@ -1,4 +1,4 @@
-// src/components/FeedbackModal.jsx
+
 import { useState } from 'react';
 import './FeedbackModal.css';
 
@@ -11,7 +11,7 @@ export function FeedbackModal({ isOpen, onClose }) {
   const handleRatingSubmit = (stars) => {
     setRating(stars);
     alert(`Дякуємо за вашу оцінку: ${stars} з 5!`);
-    onClose(); // Закриваємо модалку після вибору
+    onClose(); 
   };
 
   return (
@@ -20,7 +20,7 @@ export function FeedbackModal({ isOpen, onClose }) {
         <button className="feedback-close-btn" onClick={onClose}>&times;</button>
         
         <div className="feedback-content">
-          {/* Хмарка з серцем, як на зображення.png */}
+          {}
           <div className="feedback-bubble">
             <span className="feedback-heart">❤</span>
           </div>
@@ -28,7 +28,7 @@ export function FeedbackModal({ isOpen, onClose }) {
           <h2 className="feedback-title">Your feedback means a lot</h2>
           <p className="feedback-subtitle">rate your experience</p>
 
-          {/* Інтерактивні зірочки */}
+          {}
           <div className="feedback-stars">
             {[1, 2, 3, 4, 5].map((star) => (
               <button

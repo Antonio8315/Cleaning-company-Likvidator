@@ -1,11 +1,11 @@
 .service-item {
     display: flex;
     align-items: center;
-    /* Центруємо іконку і текст по вертикалі */
+    
     gap: 16px;
-    /* Відступ між кружком і текстом */
+    
     width: 100%;
-    /* Рядок займає всю доступну йому ширину */
+    
 }
 
 .service-item-icon-wrapper {
@@ -13,12 +13,12 @@
     height: 80px;
     border-radius: 50%;
     background-color: #1689A9;
-    /* Твій синій/бірюзовий колір кружечків з макету */
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    /* Щоб круг не стискався, якщо текст довгий */
+    
 }
 
 .service-item-icon {
@@ -33,14 +33,14 @@
     font-weight: 500;
     text-align: left;
     color: #1a253c;
-    /* Темний колір тексту */
+    
     margin: 0;
 }
 
 .service-item-desc {
     font-size: 12px;
     color: #718096;
-    /* Приглушений сірий для підписів на кшталт (25 хв - 1,5 години) */
+    
     display: block;
     margin-top: 2px;
 }
