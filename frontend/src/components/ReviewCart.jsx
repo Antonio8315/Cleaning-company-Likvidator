@@ -1,7 +1,7 @@
 // src/components/ReviewCart.jsx
 import './ReviewCart.css';
 import starIcon from '../assets/star.svg';
-export function ReviewCart({ text, author, rating, date, isWhiteDate }) {
+export function ReviewCart({ text, author, rating, date}) {
   // Створюємо масив для рендерингу зірочок
   const stars = Array(rating).fill(starIcon).map((icon, index) => (
     <img key={index} src={icon} alt="star" className="review-star" />
@@ -22,7 +22,7 @@ export function ReviewCart({ text, author, rating, date, isWhiteDate }) {
             <span key={index}>{star}</span>
           ))}
         </div>
-        <span className={`review-cart-date ${isWhiteDate ? 'white-text' : ''}`}>
+        <span className="review-cart-date">
           {date}
         </span>
       </div>

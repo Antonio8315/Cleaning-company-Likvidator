@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { ServiceItem } from '../components/ServiceItem';
 
-import './Services.css';
+import './MainServices.css';
 import house from '../assets/icons/ServicesIcons/house.png';
 import house3 from '../assets/icons/ServicesIcons/house3.png';
 
@@ -21,7 +21,7 @@ export function MainServices() {
     ];
 
     return (
-        <section className="services-section">
+        <section className="mainservices-section">
             <div className="services-header">
                 <h2>ТОП - ПОСЛУГИ</h2>
                 <div className="title-underline"></div>

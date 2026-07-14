@@ -36,7 +36,7 @@
 }
 
 /* Адаптивність: на телефонах і планшетах 5 елементів в ряд не помістяться */
-@media (max-width: 868px) {
+@media (max-width: 900px) {
   .workflow-container {
     flex-wrap: wrap; /* Дозволяємо перенос */
     justify-content: center;
@@ -50,7 +50,10 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
+  .workflow-section {
+    padding: 0px 20px 20px 20px; /* Зменшуємо відступи для мобільних */
+  }
   .workflow-container {
     flex-direction: column; /* На мобільних вишиковуємо чітко в один стовпчик */
     align-items: center;

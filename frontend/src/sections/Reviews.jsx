@@ -43,7 +43,7 @@ export function Reviews() {
     {
       id: 6,
       text: "Тра-та-та",
-      author: "Галя",
+      author: "Оля",
       rating: 3,
       date: "15th Жовтень 2021 12:36pm"
     },
@@ -52,19 +52,19 @@ export function Reviews() {
       text: "Тра-та-та",
       author: "Галя",
       rating: 3,
-      date: "15th Жовтень 2021 12:36pm"
+      date: "15th Жовтень 2025 14:41pm"
     },
     {
       id: 8,
       text: "Тра-та-та",
-      author: "Галя",
+      author: "Міша",
       rating: 3,
-      date: "15th Жовтень 2021 12:36pm"
+      date: "15th Жовтень 2021 12:31pm"
     },
   ];
 
   return (
-    <section className="reviews-section">
+    <section className="reviews-section ">
       {/* Заголовок секції */}
       <div className="reviews-header">
         <h2>ВІДГУКИ ПРО КОМПАНІЮ «ЛІКВІДАТОР»</h2>
@@ -80,7 +80,6 @@ export function Reviews() {
             author={review.author}
             rating={review.rating}
             date={review.date}
-            isWhiteDate={true}
           />
         ))}
       </div>

@@ -1,7 +1,7 @@
 // src/sections/Reviews.jsx
 import { Link } from 'react-router-dom';
 import { ReviewCart } from '../components/ReviewCart';
-import './Reviews.css';
+import './MainReviews.css';
 
 export function MainReviews() {
   const reviewsData = [
@@ -29,7 +29,7 @@ export function MainReviews() {
   ];
 
   return (
-    <section className="reviews-section">
+    <section className="mainreviews-section">
       {/* Заголовок секції */}
       <div className="reviews-header">
         <h2>ВІДГУКИ ПРО КОМПАНІЮ «ЛІКВІДАТОР»</h2>

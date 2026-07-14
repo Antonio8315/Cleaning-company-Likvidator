@@ -11,6 +11,7 @@
   /* Головна фішка: обмежуємо ширину текстового блоку, 
      щоб рядки не були занадто довгими і легко читалися */
   max-width: 900px; 
+
   margin: 0 auto; /* Центруємо весь блок на екрані */
   color: #ffffff; /* Білий колір тексту як на макеті */
   text-align: left; /* Текст вирівняний по лівому краю */
@@ -55,8 +56,9 @@
 }
 
 /* Адаптивність для мобільних пристроїв */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .about-section {
+    background: linear-gradient(180deg, #00a3cc 0%, #0561cd 5%, #005c72 100%);
     padding: 48px 16px;
   }
   
@@ -72,5 +74,28 @@
   
   .about-paragraph, .about-list li {
     font-size: 14px; /* Трохи зменшуємо шрифт на смартфонах */
+  }
+}
+
+@media (max-width: 550px) {
+  .about-section {
+    background: linear-gradient(180deg, #079fdb 0%, #0561cd 2%, #005c72 100%);
+    padding: 32px 12px;
+  }
+
+  .about-main-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .about-sub-title {
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .about-paragraph, .about-list li {
+    font-size: 13px; /* Ще трохи зменшуємо шрифт для маленьких екранів */
+    line-height: 1.5;
   }
 }
