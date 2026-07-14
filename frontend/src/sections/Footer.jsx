@@ -68,7 +68,8 @@ export function Footer() {
         {/* КОЛОНКА 3: Контакти та Графік */}
         <div className="footer-column footer-contacts">
           <h4>Наші контакти</h4>
-          <ul className="contact-list">
+          <div className="contact-info">
+          <ul className="contact-list" style = {{alignItems: 'center', justifyContent: 'center'}}>
             <li>
               <span className="contact-icon">📍</span> 
               <span>м. Чернівці, вул. Головна, 1</span>
@@ -90,6 +91,7 @@ export function Footer() {
               </div>
             </li>
           </ul>
+          </div>
         </div>
 
       </div>

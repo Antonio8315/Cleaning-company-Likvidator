@@ -27,3 +27,27 @@
   height: 40px;
   object-fit: contain;
 }
+
+@media (max-width: 900px) {
+  .circle-icon-container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle-icon-image {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .circle-icon-container {
+    width: 60px;
+    height: 60px;
+  }
+
+  .circle-icon-image {
+    width: 20px;
+    height: 20px;
+  }
+}

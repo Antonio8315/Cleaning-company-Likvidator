@@ -1,8 +1,15 @@
+.navigation-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navigation-list {
 display: flex;
 align-items: center;
 gap: 32px;  
 list-style: none;
+padding-inline-start: 10px;
 }
 
 .navigation-item {
@@ -29,4 +36,14 @@ top: 1.88%;
 bottom: 97.78%;
 font-weight: 400;
 color: #B8BECD;
+}
+
+@media (max-width: 900px) {
+  .navigation-list {
+    gap: 16px;
+  }
+
+  .navigation-item {
+    font-size: 18px;
+  }
 }

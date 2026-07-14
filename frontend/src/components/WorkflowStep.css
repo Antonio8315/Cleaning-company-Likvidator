@@ -27,3 +27,14 @@
   color: #ffffff; /* Текст на макеті білий */
   line-height: 1.4;
 }
+
+@media (max-width: 900px) {
+  .workflow-step {
+    min-width: 120px; /* Зменшуємо мінімальну ширину на середніх екранах */
+
+  }
+  .workflow-step-text{
+    font-size: 12px;
+    color: #000000; /* Текст на макеті білий */
+  }
+}

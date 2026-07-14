@@ -3,6 +3,7 @@ import { CircleIcon } from './CircleIcon';
 import './WorkflowStep.css';
 
 export function WorkflowStep({ icon, text }) {
+
   return (
     <div className="workflow-step">
       {/* Перевикористовуємо наш білий кружечок */}

@@ -11,11 +11,11 @@ import iconCash from '../assets/icons/WorkflowIcons/cash.svg';
 
 export function Workflow() {
   const stepsData = [
-    { id: 1, icon: iconDoc, text: "ви залишаєте заявку або телефонуєте" },
-    { id: 2, icon: iconPhone, text: "менеджер прораховує вартість робіт" },
-    { id: 3, icon: iconCar, text: "якщо потрібно то приїжджає до вас на оцінку" },
-    { id: 4, icon: iconCheck, text: "якісно виконуємо послуги" },
-    { id: 5, icon: iconCash, text: "оплата зручним для вас способом" }
+    { id: 1, icon: iconDoc, text: "Ви залишаєте заявку або телефонуєте" },
+    { id: 2, icon: iconPhone, text: "Менеджер прораховує вартість робіт" },
+    { id: 3, icon: iconCar, text: "Якщо потрібно то приїжджає до вас на оцінку" },
+    { id: 4, icon: iconCheck, text: "Якісно виконуємо послуги" },
+    { id: 5, icon: iconCash, text: "Оплата зручним для вас способом" }
   ];
 
   return (

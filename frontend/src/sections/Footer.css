@@ -86,6 +86,13 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
+.contact-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 .contact-list a {
   color: #ffffff;
   text-decoration: none;

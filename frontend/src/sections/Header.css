@@ -55,3 +55,19 @@ mix-blend-mode: normal;
 .btn-login:hover {
   background-color: #fff7ed; /* легкий помаранчевий відтінок (hover:bg-orange-50) */
 }
+
+@media (max-width: 900px) {
+  .btn {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .btn {
+    width: 80px;
+    height: 40px;
+    font-size: 10px;
+  }
+}

@@ -13,7 +13,7 @@ export function Navigation() {
   ];
 
   return (
-    <nav>
+    <nav className='navigation-nav'>
       <ul className="navigation-list">
         {links.map(link => {
           // Перевіряємо, чи збігається поточний шлях в браузері з path посилання
