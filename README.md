@@ -4,7 +4,7 @@
 
 ## 🚀 Живе демо (Live Demo)
 Сайт успішно задеплоєно на Vercel. Ви можете переглянути його за посиланням:
-👉 [](https://cleaning-company-likvidator-sigma.vercel.app/)
+👉 [https://cleaning-company-likvidator-sigma.vercel.app/](https://cleaning-company-likvidator-sigma.vercel.app/)
 
 ---
 
