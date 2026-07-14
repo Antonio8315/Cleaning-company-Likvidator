@@ -37,7 +37,7 @@ export function MainReviews() {
       </div>
 
       {/* Контейнер для трьох карток */}
-      <div className="reviews-grid">
+      <div className="reviews-grid" style={{ display: 'flex', justifyContent: 'center'}}>
         {reviewsData.map(review => (
           <ReviewCart
             key={review.id}

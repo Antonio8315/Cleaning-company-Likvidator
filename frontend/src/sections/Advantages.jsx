@@ -21,7 +21,7 @@ export function Advantages() {
   return (
     <section className="advantages-section">
       {/* Мемчик)) */}
-      <div className="advantages-image-container" style={{ width: '50%' }}>
+      <div className="advantages-image-container">
         <img src={memeImage} alt="Мем" className="advantages-image" style={{ width: '100%' }} />
       </div>
       <div className="advantages-content">

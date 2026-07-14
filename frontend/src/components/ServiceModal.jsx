@@ -17,14 +17,14 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
 
   const handleCloseEverything = () => {
     setIsFeedbackOpen(false);
-    onClose(); 
+    onClose();
   };
 
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-window" onClick={(e) => e.stopPropagation()}>
         <button className="modal-close-btn" onClick={onClose}>&times;</button>
-        
+
         <div className="modal-body">
           {/* Ліва частина: Динамічна інформація */}
           <div className="modal-info-side">
@@ -57,20 +57,14 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
           </div>
         </div>
       </div>
-
       <div>
-      {/* Твоя поточна форма замовлення */}
-      <form onSubmit={handleSubmit}>
-        {/* інпути... */}
-        <button type="submit">Оформити замовлення</button>
-      </form>
 
-      {/* Форма оцінки з зображення.png, яка чекає своєї черги */}
-      <FeedbackModal 
-        isOpen={isFeedbackOpen} 
-        onClose={() => handleCloseEverything()} 
-      />
-    </div>
+        {/* Форма оцінки з зображення.png, яка чекає своєї черги */}
+        <FeedbackModal
+          isOpen={isFeedbackOpen}
+          onClose={() => handleCloseEverything()}
+        />
+      </div>
     </div>
   );
 }

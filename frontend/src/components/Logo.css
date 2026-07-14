@@ -61,5 +61,6 @@ text-decoration: none;
     .logo-text {
         font-size: 32px;
         line-height: 48px;
+        display: none;
     }
 }

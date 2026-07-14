@@ -41,21 +41,21 @@ export function Reviews() {
       date: "23th Жовтень 2022 17:44pm"
     },
     {
-      id: 4,
+      id: 6,
       text: "Тра-та-та",
       author: "Галя",
       rating: 3,
       date: "15th Жовтень 2021 12:36pm"
     },
     {
-      id: 4,
+      id: 7,
       text: "Тра-та-та",
       author: "Галя",
       rating: 3,
       date: "15th Жовтень 2021 12:36pm"
     },
     {
-      id: 4,
+      id: 8,
       text: "Тра-та-та",
       author: "Галя",
       rating: 3,

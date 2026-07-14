@@ -173,7 +173,7 @@
 }
 
 /* Мобільна адаптивність */
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .modal-content.login-layout,
   .modal-content {
     width: 95%;
@@ -182,5 +182,9 @@
   }
   .modal-form-side {
     padding: 40px 20px;
+  }
+
+  .modal-image-side {
+    display: none;
   }
 }
