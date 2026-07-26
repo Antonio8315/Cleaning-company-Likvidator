@@ -1,139 +1,135 @@
 .advantages-section {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 50px 50px;
-    
-
+  padding: 50px 50px;
 }
 
 .advantages-list {
-    list-style: none;
+  list-style: none;
 
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .advantages-item {
-    display: flex;
-    gap: 20px;
-    
+  display: flex;
+  gap: 20px;
 }
 
 .advantages-image-container {
-    width: 50%;
-    margin-bottom: 20px;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 .advantages-item-text {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 139%;
-    text-align: left;
-    color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 139%;
+  text-align: left;
+  color: #000000;
 }
 
 .advantages-title {
-    display: flex;
-    left: 55.25%;
-    right: 14.69%;
-    top: 19.2%;
-    bottom: 78.43%;
+  display: flex;
+  left: 55.25%;
+  right: 14.69%;
+  top: 19.2%;
+  bottom: 78.43%;
 
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 139%;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 139%;
 
-    color: #000000;
+  color: #000000;
 
-    mix-blend-mode: normal;
-    padding: 0px 50px;
+  mix-blend-mode: normal;
+  padding: 0px 50px;
 }
 
 .btn-learn-more {
-    width: 164px;
-    height: 86.17px;
-    background: #FB8F1D;
-    color: #000000;
-    border-radius: 8px;
-    text-decoration: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 375%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: normal;
-    margin: 50px 50px;
+  width: 164px;
+  height: 86.17px;
+  background: #fb8f1d;
+  color: #000000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 375%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: normal;
+  margin: 50px 50px;
 }
 
 @media (max-width: 900px) {
-    .advantages-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
+  .advantages-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
 
-    .advantages-list {
-        gap: 16px;
-    }
+  .advantages-list {
+    gap: 16px;
+  }
 
-    .advantages-item-text {
-        font-size: 24px;
-    }
+  .advantages-item-text {
+    font-size: 24px;
+  }
 
-    .advantages-image-container {
-        width: 80%;
-        margin-bottom: 20px;
-    }
+  .advantages-image-container {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 
-    .advantages-title {
-        font-size: 24px;
-        padding: 0px 20px;
-    }
+  .advantages-title {
+    font-size: 24px;
+    padding: 0px 20px;
+  }
 
-    .btn-learn-more {
-        width: 140px;
-        height: 60px;
-        font-size: 18px;
-        margin: 20px 0;
-    }
+  .btn-learn-more {
+    width: 140px;
+    height: 60px;
+    font-size: 18px;
+    margin: 20px 0;
+  }
 }
 
 @media (max-width: 550px) {
-    .advantages-section {
-        padding: 10px;
-    }
+  .advantages-section {
+    padding: 10px;
+  }
 
-    .advantages-item-text {
-        font-size: 16px;
-    }
+  .advantages-item-text {
+    font-size: 16px;
+  }
 
-    .advantages-image-container {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .advantages-image-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .advantages-title {
-        font-size: 16px;
-        padding: 0px 10px;
-    }
+  .advantages-title {
+    font-size: 16px;
+    padding: 0px 10px;
+  }
 
-    .btn-learn-more {
-        width: 120px;
-        height: 50px;
-        font-size: 16px;
-        margin: 10px 0;
-    }
+  .btn-learn-more {
+    width: 120px;
+    height: 50px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
 }

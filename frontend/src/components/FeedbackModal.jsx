@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import './FeedbackModal.css';
 
@@ -11,16 +10,15 @@ export function FeedbackModal({ isOpen, onClose }) {
   const handleRatingSubmit = (stars) => {
     setRating(stars);
     alert(`Дякуємо за вашу оцінку: ${stars} з 5!`);
-    onClose(); 
+    onClose();
   };
 
   return (
     <div className="feedback-overlay" onClick={onClose}>
       <div className="feedback-window" onClick={(e) => e.stopPropagation()}>
         <button className="feedback-close-btn" onClick={onClose}>&times;</button>
-        
+
         <div className="feedback-content">
-          {}
           <div className="feedback-bubble">
             <span className="feedback-heart">❤</span>
           </div>
@@ -28,7 +26,6 @@ export function FeedbackModal({ isOpen, onClose }) {
           <h2 className="feedback-title">Your feedback means a lot</h2>
           <p className="feedback-subtitle">rate your experience</p>
 
-          {}
           <div className="feedback-stars">
             {[1, 2, 3, 4, 5].map((star) => (
               <button

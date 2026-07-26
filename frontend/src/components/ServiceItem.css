@@ -1,46 +1,44 @@
 .service-item {
-    display: flex;
-    align-items: center;
-    
-    gap: 16px;
-    
-    width: 100%;
-    
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  width: 100%;
 }
 
 .service-item-icon-wrapper {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #1689A9;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1689a9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .service-item-icon {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .service-item-title {
-    display: flex;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: left;
-    color: #1a253c;
-    
-    margin: 0;
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #1a253c;
+
+  margin: 0;
 }
 
 .service-item-desc {
-    font-size: 12px;
-    color: #718096;
-    
-    display: block;
-    margin-top: 2px;
+  font-size: 12px;
+  color: #718096;
+
+  display: block;
+  margin-top: 2px;
 }

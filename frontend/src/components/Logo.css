@@ -1,66 +1,65 @@
 .logo-container {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
 .link-logo {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
-.logo {
-display: flex;
-width: 150px;
-height: 150px;
-left: 114px;
-top: 35px;
 
+.logo {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  left: 114px;
+  top: 35px;
 }
 
 .logo-text {
-display: flex;
-left: 19.69%;
-right: 60.94%;
-top: 1.16%;
-bottom: 97.41%;
-font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-color: #202336;
-mix-blend-mode: normal;
-text-decoration: none;
+  display: flex;
+  left: 19.69%;
+  right: 60.94%;
+  top: 1.16%;
+  bottom: 97.41%;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  color: #202336;
+  mix-blend-mode: normal;
+  text-decoration: none;
 }
 
 .link-logo {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
 
-    .logo-text {
-        top: 0;
-        font-size: 40px;
-        line-height: 60px;
-    }
+  .logo-text {
+    top: 0;
+    font-size: 40px;
+    line-height: 60px;
+  }
 }
 
 @media (max-width: 550px) {
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
 
-    .logo-text {
-        font-size: 32px;
-        line-height: 48px;
-        display: none;
-    }
+  .logo-text {
+    font-size: 32px;
+    line-height: 48px;
+    display: none;
+  }
 }

@@ -1,13 +1,12 @@
+import { WorkflowStep } from "../components/WorkflowStep";
 
-import { WorkflowStep } from '../components/WorkflowStep';
-import './Workflow.css';
+import iconDoc from "../assets/icons/WorkflowIcons/document.svg";
+import iconPhone from "../assets/icons/WorkflowIcons/phone.svg";
+import iconCar from "../assets/icons/WorkflowIcons/car.svg";
+import iconCheck from "../assets/icons/WorkflowIcons/check.svg";
+import iconCash from "../assets/icons/WorkflowIcons/cash.svg";
 
-
-import iconDoc from '../assets/icons/WorkflowIcons/document.svg';
-import iconPhone from '../assets/icons/WorkflowIcons/phone.svg';
-import iconCar from '../assets/icons/WorkflowIcons/car.svg';
-import iconCheck from '../assets/icons/WorkflowIcons/check.svg';
-import iconCash from '../assets/icons/WorkflowIcons/cash.svg';
+import "./Workflow.css";
 
 export function Workflow() {
   const stepsData = [
@@ -15,7 +14,7 @@ export function Workflow() {
     { id: 2, icon: iconPhone, text: "Менеджер прораховує вартість робіт" },
     { id: 3, icon: iconCar, text: "Якщо потрібно то приїжджає до вас на оцінку" },
     { id: 4, icon: iconCheck, text: "Якісно виконуємо послуги" },
-    { id: 5, icon: iconCash, text: "Оплата зручним для вас способом" }
+    { id: 5, icon: iconCash, text: "Оплата зручним для вас способом" },
   ];
 
   return (
@@ -25,9 +24,8 @@ export function Workflow() {
         <div className="workflow-underline"></div>
       </div>
 
-      {}
       <div className="workflow-container">
-        {stepsData.map(step => (
+        {stepsData.map((step) => (
           <WorkflowStep key={step.id} icon={step.icon} text={step.text} />
         ))}
       </div>

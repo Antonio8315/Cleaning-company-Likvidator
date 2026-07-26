@@ -15,7 +15,7 @@ export function MainPage() {
   const location = useLocation();
 
   useEffect(() => {
-    
+
     if (location.hash) {
       const element = document.getElementById(location.hash.slice(1));
       if (element) {

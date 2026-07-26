@@ -1,4 +1,3 @@
-
 import './ReviewCart.css';
 import starIcon from '../assets/star.svg';
 export function ReviewCart({ text, author, rating, date}) {
@@ -9,12 +8,10 @@ export function ReviewCart({ text, author, rating, date}) {
 
   return (
     <div className="review-cart">
-      {}
       <div className="review-text-bubble">
         <p>{text}</p>
       </div>
       
-      {}
       <div className="review-meta">
         <span className="review-author">{author}</span>
         <div className="review-stars">

@@ -1,4 +1,3 @@
-
 import { Header } from "../sections/Header.jsx";
 import { ReviewsHero } from "../sections/ReviewsHero.jsx";
 import { Reviews } from '../sections/Reviews.jsx';
@@ -8,12 +7,8 @@ export function ReviewsPage() {
   return (
     <>
       <Header />
-      {}
-        
-        {}
-        <ReviewsHero />
-      {}
-        <Reviews />
+      <ReviewsHero />
+      <Reviews />
       <Footer />
     </>
   );

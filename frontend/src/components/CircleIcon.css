@@ -1,28 +1,16 @@
-
-
 .circle-icon-container {
-  
   width: 100px;
   height: 100px;
-  
-  
   border-radius: 50%;
-  
-  
   background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
-  
-  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  
-  flex-shrink: 0; 
+  flex-shrink: 0;
 }
 
 .circle-icon-image {
-  
   width: 40px;
   height: 40px;
   object-fit: contain;

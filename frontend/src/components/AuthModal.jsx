@@ -1,10 +1,9 @@
-
 import { useEffect, useState } from 'react';
 import './AuthModal.css';
-import registerImg from '../assets/icons/RegisterImages/cleaner-bucket.jpg'; 
+import registerImg from '../assets/icons/RegisterImages/cleaner-bucket.jpg';
 
 export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
-  const [mode, setMode] = useState(initialMode); 
+  const [mode, setMode] = useState(initialMode);
   const [formData, setFormData] = useState({
     username: '',
     email: '',
@@ -32,28 +31,25 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
     e.preventDefault();
     if (mode === 'login') {
       console.log("Вхід в систему:", { email: formData.email, password: formData.password });
-      
+
     } else {
       console.log("Реєстрація користувача:", formData);
-      
+
     }
   };
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      {}
       <div className={`modal-content ${mode === 'login' ? 'login-layout' : ''}`} onClick={(e) => e.stopPropagation()}>
-        
+
         <button className="modal-close-btn" onClick={onClose}>&times;</button>
 
-        {}
         {mode === 'register' && (
           <div className="modal-image-side">
             <img src={registerImg} alt="Cleaning service" />
           </div>
         )}
 
-        {}
         <div className="modal-form-side">
           {mode === 'login' ? (
             <>
@@ -72,48 +68,48 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
           )}
 
           <form onSubmit={handleSubmit} className="auth-form">
-            {}
+
             {mode === 'register' && (
               <div className="input-group">
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   name="username"
-                  placeholder="Username" 
+                  placeholder="Username"
                   value={formData.username}
                   onChange={handleChange}
-                  required 
+                  required
                 />
               </div>
             )}
 
             <div className="input-group">
-              <input 
-                type="email" 
+              <input
+                type="email"
                 name="email"
-                placeholder="Email" 
+                placeholder="Email"
                 value={formData.email}
                 onChange={handleChange}
-                required 
+                required
               />
             </div>
 
             <div className="input-group">
-              <input 
-                type="password" 
+              <input
+                type="password"
                 name="password"
-                placeholder="Password" 
+                placeholder="Password"
                 value={formData.password}
                 onChange={handleChange}
-                required 
+                required
               />
             </div>
 
-            {}
+
             {mode === 'register' ? (
               <div className="checkbox-group">
                 <label className="checkbox-label">
-                  <input 
-                    type="checkbox" 
+                  <input
+                    type="checkbox"
                     name="agreeToTerms"
                     checked={formData.agreeToTerms}
                     onChange={handleChange}
@@ -125,7 +121,7 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
                 </label>
               </div>
             ) : (
-              
+
               <div className="forgot-password-placeholder"></div>
             )}
 
@@ -133,7 +129,6 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login' }) {
               {mode === 'login' ? 'Log in' : 'Create account'}
             </button>
 
-            {}
             {mode === 'register' && (
               <p className="modal-back-to-login">
                 Already have an account? <span onClick={() => setMode('login')}>Log in</span>

@@ -1,5 +1,3 @@
-
-
 .mainservices-section {
   width: 100%;
   padding: 60px 40px;
@@ -25,7 +23,6 @@
   margin: 0 auto;
 }
 
-
 .services-main-container {
   display: flex;
   justify-content: space-between;
@@ -35,35 +32,33 @@
 }
 
 .services-column-group {
-  flex: 1; 
+  flex: 1;
   margin: 20px;
 }
 
 .group-title-orange {
   font-size: 20px;
-  color: #ff9124; 
+  color: #ff9124;
   text-align: center;
   margin-bottom: 32px;
   font-weight: 700;
 }
 
-
 .services-sub-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 24px 20px; 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 20px;
 }
-
 
 @media (max-width: 968px) {
   .services-main-container {
-    flex-direction: column; 
+    flex-direction: column;
     gap: 40px;
   }
 }
 
 @media (max-width: 550px) {
   .services-sub-grid {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }

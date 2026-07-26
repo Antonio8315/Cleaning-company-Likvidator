@@ -1,8 +1,8 @@
-
-import './ServiceModal.css';
-import apartmentImg from '../assets/icons/ServicesImages/CleaningApartments.webp'; 
+import apartmentImg from '../assets/icons/ServicesImages/CleaningApartments.webp';
 import { useState } from 'react';
 import { FeedbackModal } from '../components/FeedbackModal';
+
+import './ServiceModal.css';
 
 export function ServiceModal({ isOpen, onClose, title, description, icon }) {
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
@@ -26,20 +26,20 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
         <button className="modal-close-btn" onClick={onClose}>&times;</button>
 
         <div className="modal-body">
-          {}
           <div className="modal-info-side">
-            {}
             <div className="modal-service-icon-bg">
               <img src={icon} alt={title} className="modal-service-img-preview" />
             </div>
+
             <h2 className="service-title">{title}</h2>
+
             <p className="service-description">
               {description || "Професійні клінінгові послуги від компанії Likvidator. Швидко, якісно та за доступною ціною."}
             </p>
+            
             <div className="service-price">Ціна: <span>Розраховується індивідуально</span></div>
           </div>
 
-          {}
           <div className="modal-form-side">
             <h3>Швидке замовлення</h3>
             <form onSubmit={handleSubmit} className="service-order-form">
@@ -59,7 +59,7 @@ export function ServiceModal({ isOpen, onClose, title, description, icon }) {
       </div>
       <div>
 
-        {}
+        { }
         <FeedbackModal
           isOpen={isFeedbackOpen}
           onClose={() => handleCloseEverything()}

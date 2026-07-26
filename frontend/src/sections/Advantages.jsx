@@ -1,14 +1,14 @@
-import './Advantages.css';
-import memeImage from '../assets/priitula-meme.jpg';
+import memeImage from "../assets/priitula-meme.jpg";
 
-import { Link } from 'react-router-dom';
-import { CircleIcon } from '../components/CircleIcon';
-import './Advantages.css';
+import { Link } from "react-router-dom";
+import { CircleIcon } from "../components/CircleIcon";
 
-import iconLike from '../assets/icons/like.png';
-import iconArrows from '../assets/icons/arrows.png';
-import iconStaff from '../assets/icons/staff.png';
-import iconEquipment from '../assets/icons/equipment.png';
+import iconLike from "../assets/icons/like.png";
+import iconArrows from "../assets/icons/arrows.png";
+import iconStaff from "../assets/icons/staff.png";
+import iconEquipment from "../assets/icons/equipment.png";
+
+import "./Advantages.css";
 
 export function Advantages() {
   const advantagesData = [
@@ -20,33 +20,33 @@ export function Advantages() {
 
   return (
     <section className="advantages-section">
-      {}
       <div className="advantages-image-container">
-        <img src={memeImage} alt="Мем" className="advantages-image" style={{ width: '100%' }} />
+        <img
+          src={memeImage}
+          alt="Мем"
+          className="advantages-image"
+          style={{ width: "100%" }}
+        />
       </div>
       <div className="advantages-content">
         <h2 className="advantages-title">НАШІ ПЕРЕВАГИ</h2>
 
         <ul className="advantages-list">
-          {advantagesData.map(item => (
+          {advantagesData.map((item) => (
             <li key={item.id} className="advantages-item">
-              {}
+
               <CircleIcon iconUrl={item.icon} altText={item.text} />
 
-              {}
               <span className="advantages-item-text">{item.text}</span>
             </li>
           ))}
         </ul>
 
-        {}
         <div className="advantages-action">
           <Link to="#about" className="btn-learn-more">
             Про нас
           </Link>
-          {}
         </div>
-
       </div>
     </section>
   );

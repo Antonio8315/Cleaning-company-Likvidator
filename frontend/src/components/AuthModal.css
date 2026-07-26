@@ -1,5 +1,3 @@
-
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -13,7 +11,6 @@
   z-index: 1000;
 }
 
-
 .modal-content {
   display: flex;
   background: #ffffff;
@@ -24,9 +21,10 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  transition: width 0.3s ease, height 0.3s ease;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease;
 }
-
 
 .modal-content.login-layout {
   width: 460px;
@@ -40,11 +38,10 @@
   background: none;
   border: none;
   font-size: 30px;
-  color: #1e40af; 
+  color: #1e40af;
   cursor: pointer;
   z-index: 10;
 }
-
 
 .modal-image-side {
   flex: 1;
@@ -57,26 +54,24 @@
   object-fit: cover;
 }
 
-
 .modal-form-side {
   flex: 1.1;
-  background: linear-gradient(135deg, #a7f3d0, #38bdf8); 
+  background: linear-gradient(135deg, #a7f3d0, #38bdf8);
   padding: 40px 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #1e40af;
-  text-align: center; 
+  text-align: center;
 }
 
 .modal-title {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 32px;
   margin: 0 0 12px 0;
   font-weight: 400;
   line-height: 1.2;
 }
-
 
 .modal-switch-text {
   font-size: 16px;
@@ -102,7 +97,6 @@
   margin: 0 0 24px 0;
 }
 
-
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -122,7 +116,6 @@
   font-family: inherit;
 }
 
-
 .submit-auth-btn {
   margin-top: 8px;
   background-color: #1a365d;
@@ -139,7 +132,6 @@
 .submit-auth-btn:hover {
   background-color: #1e3a8a;
 }
-
 
 .checkbox-label {
   display: flex;
@@ -169,9 +161,8 @@
 }
 
 .forgot-password-placeholder {
-  height: 4px; 
+  height: 4px;
 }
-
 
 @media (max-width: 550px) {
   .modal-content.login-layout,

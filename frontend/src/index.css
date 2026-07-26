@@ -3,7 +3,7 @@
   --text-h: #08060d;
   --bg: #fff;
   --border: #e5e4e7;
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
 
   font-family: var(--sans);
   line-height: 1.45;
@@ -14,8 +14,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-
 
   --border: #2e303a;
 }
@@ -45,7 +43,14 @@ body {
   flex-direction: column;
   border-inline: 1px solid var(--border);
   text-align: center;
-  background: linear-gradient(180deg, #ffffff 0%, #0af6da 40%, #71ffee 50%, #0561cd 65%, #005c72 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #0af6da 40%,
+    #71ffee 50%,
+    #0561cd 65%,
+    #005c72 100%
+  );
   box-sizing: border-box;
 }
 
@@ -59,7 +64,6 @@ h2 {
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
-
 }
 
 h2 {

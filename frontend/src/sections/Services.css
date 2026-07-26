@@ -1,8 +1,6 @@
-
-
 .services-section {
   width: 100%;
   padding: 60px 40px;
   box-sizing: border-box;
-    background: linear-gradient(180deg, #0af6da 0%, #04e7cd 100%);
+  background: linear-gradient(180deg, #0af6da 0%, #04e7cd 100%);
 }
